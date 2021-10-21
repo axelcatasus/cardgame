@@ -63,7 +63,8 @@ article.card {
 
 a {
     border: solid black 2px;
-    padding: 2rem;
+    padding: 0.8rem;
+    margin: 1rem;
     background-color: darkorange;
     border-radius: 5px;
     box-shadow: 1px 0px 9px 1px rgba(2, 0, 0, 0.2);
