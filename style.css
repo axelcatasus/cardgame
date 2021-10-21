@@ -14,6 +14,8 @@ body {
     
 }
 
+
+
 article.card {
     aspect-ratio: 2.25 / 3.5;
     width: 15rem;
@@ -72,4 +74,15 @@ a {
 a:hover {
     cursor: pointer;
     background-color: orangered;
+}
+
+.buttons {
+    display:flex;
+}
+
+
+@media screen and (max-width: 500px){
+    .buttons {
+    flex-direction: column;
+    }
 }
