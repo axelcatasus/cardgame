@@ -4,7 +4,7 @@ margin:0;
 
 body {
     margin: 0;
-    background: peru;
+    background: linear-gradient(peru, lemonchiffon, peru);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -65,8 +65,9 @@ article.card {
 
 a {
     border: solid black 2px;
-    padding: .7rem;
-    background-color: darkorange;
+    padding: 0.4rem;
+    margin: 1rem;
+    background-color: peru;
     border-radius: 5px;
     box-shadow: 1px 0px 9px 1px rgba(2, 0, 0, 0.2);
 }
@@ -79,7 +80,6 @@ a:hover {
 .buttons {
     display:flex;
 }
-
 
 @media screen and (max-width: 500px){
     .buttons {
