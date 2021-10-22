@@ -92,9 +92,20 @@ function displayCard(deck) {
     document.querySelector(".triesleft").innerText = tries + " försök kvar"
 
     document.querySelector(".point").innerText = points + " poäng"
+    
     if(tries == 0){
-        alert("Game over!")
-        location.reload()
+        document.querySelector(".card").style.display = "none"
+        document.querySelector(".buttons").style.display = "none"
+        document.querySelector(".triesleft").style.display = "none"
+        document.querySelector(".remainingcards").style.display = "none"
+        document.querySelector(".point").style.display = "none"
+        document.querySelector("body").style.background = "radiual-gradient(peru, lemonchiffon, peru)"
+        document.querySelector(".alert").style.filter = "none"
+        document.querySelector(".alert").style.display = "block"
+        document.querySelector(".alert")
+        .addEventListener("click", ()=>{
+            location.reload()
+        })
     }
 }
 displayCard(deck)
