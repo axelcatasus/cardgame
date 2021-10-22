@@ -3,7 +3,7 @@ margin:0;
 }
 
 body {
-    margin: 1rem;
+    padding: 1 rem;
     background: linear-gradient(peru, lemonchiffon, peru);
     height: 100vh;
     display: flex;
