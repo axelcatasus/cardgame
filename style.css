@@ -57,9 +57,11 @@ article.card {
 .scorekeeping{
     align-self: flex-start;
     margin-left: 1rem;
+    margin-top: 1rem;
 }
 
 .remainingcards{
+    margin: .5rem;
     text-align: center;
 }
 
@@ -74,11 +76,12 @@ a {
 
 a:hover {
     cursor: pointer;
-    background-color: orangered;
+    background-color: rgb(185, 120, 55);
 }
 
 .buttons {
-    display:flex;
+    display: flex;
+    text-align: center;
 }
 
 @media screen and (max-width: 500px){

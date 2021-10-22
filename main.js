@@ -71,6 +71,7 @@ function displayCard(deck) {
         document.querySelector(".card").style.backgroundColor = "#fff"
         document.querySelector(".card").style.backgroundRepeat = "no-repeat"
         document.querySelector(".card").style.backgroundPosition = "center"
+        document.querySelector(".card").style.filter = "grayscale(100%)"
         document.querySelector(".middle").style.display = "none"
     }
     else if(deck[i].name == "Kn"){
@@ -93,7 +94,7 @@ function displayCard(deck) {
 
     document.querySelector(".point").innerText = points + " poäng"
     if(tries == 0){
-        alert("YOU LOST bitch")
+        alert("Game over!")
         location.reload()
     }
 }
