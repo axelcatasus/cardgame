@@ -68,7 +68,7 @@ article.card {
 a {
     border: solid black 2px;
     padding: 0.4rem;
-    margin: 1rem;
+    margin: 0.4rem;
     background-color: peru;
     border-radius: 5px;
     box-shadow: 1px 0px 9px 1px rgba(2, 0, 0, 0.2);
