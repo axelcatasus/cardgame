@@ -65,13 +65,12 @@ function displayCard(deck) {
         document.querySelector(".middle").style.display = "none"
     }
     else if(deck[i].name == "D"){
-        document.querySelector(".card").style.background = "url(https://www.iths.se/wp-content/uploads/2020/10/lotta-armijo-holmberg-webb-1024x1024.jpg)"
+        document.querySelector(".card").style.background = "url(lotta.png)"
         document.querySelector(".card").style.backgroundSize = "contain"
         document.querySelector(".card").style.backgroundSize = "75% auto"
         document.querySelector(".card").style.backgroundColor = "#fff"
         document.querySelector(".card").style.backgroundRepeat = "no-repeat"
         document.querySelector(".card").style.backgroundPosition = "center"
-        document.querySelector(".card").style.filter = "grayscale(100%)"
         document.querySelector(".middle").style.display = "none"
     }
     else if(deck[i].name == "Kn"){
@@ -101,7 +100,7 @@ function displayCard(deck) {
 displayCard(deck)
 console.log(deck)
 
-
+let point = document.querySelector(".points")
 
 document.querySelector(".guesslower")
 .addEventListener("click", ()=>{
