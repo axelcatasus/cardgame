@@ -7,11 +7,15 @@
     <title>Card Game</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 </head>
 <body>
     <article class = "scorekeeping">
         <p class="point">Poäng:</p>
         <p class="triesleft">försök kvar:</p>
+        <p class="highscore">Highscore: 0</p>
     </article>
     <article>
     <article class="card">
@@ -22,7 +26,7 @@
     <p class = "remainingcards">X kort kvar</p>
     <div class="alert" onclick="this.style.display='none';">
         <p class = "over">Game over!</p>
-        <p class = "again">Play again?</p>
+        <p class = "again">Spela igen!</p>
     </div>
     </article>
     <article class="buttons">

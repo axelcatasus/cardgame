@@ -32,7 +32,9 @@ function getDeck(){
 }
 
 getDeck()
-
+if(localStorage.getItem("highScore") > 0){
+    document.querySelector(".highscore").innerHTML = "Highscore: " + localStorage.getItem("highScore");
+}
 let i = 0
 let tries = 3
 let points = 0
@@ -86,6 +88,7 @@ function displayCard(deck) {
         document.querySelector(".card").style.color = "black"
     } else {
         document.querySelector(".card").style.color = "rgb(206, 56, 56)"
+        // document.querySelector(".card").style.backgroundBlendMode = "rgb(206, 56, 56)"
     }
     document.querySelector(".remainingcards").innerText = deck.length-i-1 + " kort kvar att gissa"
 
@@ -102,6 +105,8 @@ function displayCard(deck) {
         document.querySelector("body").style.background = "radiual-gradient(peru, lemonchiffon, peru)"
         document.querySelector(".alert").style.filter = "none"
         document.querySelector(".alert").style.display = "block"
+        document.querySelector(".over").innerText = "Du fick " + points + " poäng!"
+        localStorage.setItem("highScore", points);
         document.querySelector(".alert")
         .addEventListener("click", ()=>{
             location.reload()
@@ -155,3 +160,4 @@ document.querySelector(".guesshigher")
         displayCard(deck)
     }
 })
+
