@@ -106,7 +106,9 @@ function displayCard(deck) {
         document.querySelector(".alert").style.filter = "none"
         document.querySelector(".alert").style.display = "block"
         document.querySelector(".over").innerText = "Du fick " + points + " poäng!"
-        localStorage.setItem("highScore", points);
+        if(points > localStorage.getItem("highScore"))
+            {localStorage.setItem("highScore", points)
+        }
         document.querySelector(".alert")
         .addEventListener("click", ()=>{
             location.reload()
